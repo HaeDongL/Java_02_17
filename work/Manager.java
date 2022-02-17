@@ -60,20 +60,20 @@ class Manager extends Employee
 	public static void main(String[] args) 
 	{
 		
-		Manager m1 = new Manager("È«±æµ¿");
+		//Manager m1 = new Manager("È«±æµ¿");
 		
-		Manager m2 = new Manager("È«±æµ¿","EJB");
+		//Manager m2 = new Manager("È«±æµ¿","EJB");
 		
-		Manager m3 = new Manager("È«±æµ¿","EJB",25);
+		//Manager m3 = new Manager("È«±æµ¿","EJB",25);
 		
-		Manager m4 = new Manager("È«±æµ¿","EJB",25,300);
+		//Manager m4 = new Manager("È«±æµ¿","EJB",25,300);
 
-		System.out.print("\n");
+		//System.out.print("\n");
 
-		System.out.println("overridingµÈ salary È£Ãâ : "+m4.salary);
+		//System.out.println("overridingµÈ salary È£Ãâ : "+m4.salary);
 
-		m4.callSalary();
+		//m4.callSalary();
 
-
+		
 	}//main
 }//class

@@ -12,11 +12,11 @@ public class Iam01 extends Human01{
 	
 	///Constructor
 	public Iam01(){
-		this("홍길동");
+		super("홍길동");
         System.out.println("Iam class default Constructor");
 	}
 	public Iam01(String str){
-		super(str);
+		super();
 		System.out.println("Iam class의 String 인자를 받는 Constructor");
 		job = str;
 	}
