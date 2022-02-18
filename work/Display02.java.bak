@@ -35,7 +35,7 @@ abstract class BusCharge
 
 	//==> 사용되지 않으며, 하위클래스에 OverRiding을 강제하는 추상메소드 정의
 
-	//public void charge(){
+	public void charge(){
 	//	System.out.println("학생:300,일반인:500,어르신:공짜");
 	//}
 	public abstract void charge();
@@ -76,13 +76,15 @@ class Old extends BusCharge
 
 
 public class Display02 
-{
+{		//main
 	public static void main(String[] args) 
-	{
+	{	
+		//상위 레퍼런스로 하위 인스턴스를 참조가능(묵시적 형변환 / ~ is a ~ Relation)
+		//abstract class 는 캑체 생성불가 그러나 type 선언은 ????
 		BusCharge bc1 = new Student();
 		BusCharge bc2 = new Adult();
 		BusCharge bc3 = new Old();
-
+		//==> PolymopPhism : 하나의 인터페이스로 접근 및 다양한 활용
 		bc1.information();
 		System.out.println(bc1.section);
 		bc1.charge();
@@ -94,5 +96,5 @@ public class Display02
 		bc3.information();
 		System.out.println(bc3.section);
 		bc3.charge();
-	}
+	}//main
 }

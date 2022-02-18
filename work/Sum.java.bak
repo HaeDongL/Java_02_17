@@ -17,7 +17,9 @@ public class Sum {
 		// 첫번째 인자값
 		if(num1 % 2 == 0 && num1 % 3 == 0) {
 			System.out.println("입력하신 1번째 인자값 "+num1+"은 짝수 이며 3의 배수입니다 ");
+			if(num1 % 3 != 0){
 			
+			}
 				
 			
 		}else if(num1 % 2 != 0) {

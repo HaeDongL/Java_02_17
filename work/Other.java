@@ -1,3 +1,5 @@
+package jb04.part07;
+
 public class  Other
 {
 

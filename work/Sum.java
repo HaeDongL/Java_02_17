@@ -36,7 +36,8 @@ public class Sum {
 				System.out.println("입력하신 2번째 인자값 "+num2+"은 홀수 이며 3의 배수가아닙니다.");
 		}
 		
-		
+		PrintStream p = new PrintStream();
+		p.println("이해동");
 		
 	}
 }

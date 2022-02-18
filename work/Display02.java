@@ -78,11 +78,13 @@ class Old extends BusCharge
 public class Display02 
 {		//main
 	public static void main(String[] args) 
-	{
+	{	
+		//상위 레퍼런스로 하위 인스턴스를 참조가능(묵시적 형변환 / ~ is a ~ Relation)
+		//abstract class 는 캑체 생성불가 그러나 type 선언은 ????
 		BusCharge bc1 = new Student();
 		BusCharge bc2 = new Adult();
 		BusCharge bc3 = new Old();
-
+		//==> PolymopPhism : 하나의 인터페이스로 접근 및 다양한 활용
 		bc1.information();
 		System.out.println(bc1.section);
 		bc1.charge();

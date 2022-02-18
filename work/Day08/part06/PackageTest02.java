@@ -1,4 +1,4 @@
-package jb04.part06;
+package kr.co.bitcamp.java;
 
 /*
 	FileName : PackageTest02.java

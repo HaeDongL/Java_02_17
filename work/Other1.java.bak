@@ -34,7 +34,7 @@ public class  Other1
 
 
 
-}//
+}//class
 
 /*
 	1.private을 사용하여 다른 class로 부터 상태 정보은닉

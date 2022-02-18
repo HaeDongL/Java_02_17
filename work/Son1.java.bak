@@ -1,4 +1,4 @@
-//package jb04.part07.outer;
+package jb04.part07.outer;
 
 /*
 		FileName : Son1.java
@@ -26,3 +26,8 @@ public class Son1 extends Father
 		System.out.println(getPassword(0));
 	}
 }
+
+/*
+	1.private을 사용하여 다른 class로 부터 상태 정보 은익
+	2.method를 통해(행위를 통해)정보은익 여부를 제어
+*/

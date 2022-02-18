@@ -1,4 +1,4 @@
-//package jb04.part07.outer;
+package jb04.part07.outer;
 
 /*
 		FileName : Son1.java
