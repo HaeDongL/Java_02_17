@@ -1,4 +1,4 @@
-package lhd;
+//package lhd;
 /*
 FileName: CalculationTest.java
 */
@@ -8,7 +8,7 @@ public class CalculationTest {
 		int a; // int data type variable a declaration
 		a = 0; // int data type variable a 에 value 삽입
 		int b = 1; // int data type variable a declaration 과 동시에 value 대입
-		int c = 2;
+		int c = 3;
 		
 		// 변수의 값을 출력 (문자 + 연산자 사용 => append)
 		System.out.println("a = "+a+":b = "+b+":c = "+c);
