@@ -1,5 +1,5 @@
 class Account
-{
+{//02.21
 	///Field
 		private String accNo;
 		private int balance;
@@ -28,12 +28,12 @@ class Account
 		}
 
 		public void save(int money){
-			System.out.println(accNo+" 계좌에"+money+"만원이 입금되었습니다.");
+			System.out.println(accNo+" 계좌에 "+money+"만원이 입금되었습니다.");
 			this.balance += money;
 		}
 
 		public void deposit(int money){
-			System.out.println(accNo+" 계좌에"+money+"만원이 출금되었습니다.");
+			System.out.println(accNo+" 계좌에 "+money+"만원이 출금되었습니다.");
 			this.balance -= money;
 		}
 }

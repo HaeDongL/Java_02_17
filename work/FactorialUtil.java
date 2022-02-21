@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class FactorialUtil 
-{
+{//02.21
 	
 
 	public int factorial(int n){
@@ -10,7 +10,7 @@ public class FactorialUtil
 		for(int i=n; i>=1; i--){
 				result *= i;
 		}
-
+		
 			System.out.print("팩토리얼 결과 값 = "+result+"\t(");
 		for(int i=n; i>1; i--){
 			System.out.print(i+"*");

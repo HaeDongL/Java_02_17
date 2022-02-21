@@ -1,5 +1,5 @@
 class Account
-{
+{//02.21
 	///Field
 		private String accNo;
 		private int balance;
@@ -15,7 +15,7 @@ class Account
 			if(pwd == 1234){
 				return this.accNo;
 			}else {
-				return "";
+				return null;
 			}
 		}
 

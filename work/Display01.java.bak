@@ -100,9 +100,9 @@ public class Display01
 
 		//==> 아래의 주석을 차례로 풀어 컴파일 에러를 확인하자.
 		//==>1. abstract class는 객체는 생성 불가
-		// BusCharge bc01 = new BusCharge();
+		 BusCharge bc01 = new BusCharge();
 
 		//==>2. 객체생성은 불가하나, 변수의 선언 (Data Type)은 가능하다.
 		//BusCharge.bc02
-	}
-}
+	}//main
+}//class

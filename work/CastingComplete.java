@@ -23,7 +23,7 @@ class Sub extends Super
 	///Method
 
 	public void a(){
-		System.out.prinltn("overriding된 Sub:a()");
+		System.out.println("overriding된 Sub:a()");
 	}
 
 	public void b(){
@@ -63,7 +63,7 @@ public class CastingComplete
 		System.out.println("\n는 b()에 접근 불가하다.");
 		System.out.println("casting 연산자를 이용 Sub sub = (Sub)s3 명시적 형변환");
 		Sub sub = (Sub)s3;
-		Sub.b();
+		sub.b();
 
 		//네엣 : 하위 data type으로 상위 인스턴스 생성 (Data type != 인스턴스)
 		//error 부위 (하위래퍼런스변수는 상위인스턴스를 레퍼런스할 수 없다.) 아래

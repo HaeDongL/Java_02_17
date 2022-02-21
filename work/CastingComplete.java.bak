@@ -23,7 +23,7 @@ class Sub extends Super
 	///Method
 
 	public void a(){
-		System.out.prinltn("overridingµÈ Sub:a()");
+		System.out.println("overridingµÈ Sub:a()");
 	}
 
 	public void b(){

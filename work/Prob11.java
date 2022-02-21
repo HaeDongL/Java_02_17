@@ -1,5 +1,5 @@
 public class Prob11 
-{
+{//02.21
 
 
 	public void calc(int[] ix){

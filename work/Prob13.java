@@ -1,8 +1,8 @@
 class Human
-{
+{//02.21
 	///Field
-	String name;
-	int age;
+	private String name;
+	private int age;
 	//Constructor
 	public Human(){
 
@@ -20,13 +20,21 @@ class Human
 	public void print(){
 		System.out.println("이름 : "+this.name+"\t나이 : "+this.age);
 	}
+
+	public String getName(){
+		return  this.name;
+	}
+
+	public int getAge(){
+		return this.age;
+	}
 }
 
 
 class Student extends Human
 {
 	///Field
-	int id;
+	private int id;
 
 	///Constructor
 	public Student(){
@@ -46,8 +54,15 @@ class Student extends Human
 	}
 
 	///Method
+	public String getSubject(){
+		return this.subject;
+	}
+
 	public void print(){
-		System.out.println("이름 : "+this.name+"\t나이 : "+this.age+"\t학    번 : "+this.id);
+		System.out.println("이름 : "+getName()+"\t나이 : "+getAge()+"\t학    번 : "+this.id);
+	}
+	public int getId(){
+		return this.id;
 	}
 
 }
@@ -55,7 +70,7 @@ class Student extends Human
 class Teacher extends Human
 {	
 	///Field
-	String subject;
+	private String subject;
 
 	///Constructor
 	public Teacher(){
@@ -75,15 +90,20 @@ class Teacher extends Human
 	}
 
 	///Method
-	public void print(){
-		System.out.println("이름 : "+this.name+"\t나이 : "+this.age+"\t담당과목 : "+this.subject); 
+	public String getSubject(){
+		return this.subject;
 	}
+
+	public void print(){
+		System.out.println("이름 : "+getName()+"\t나이 : "+getAge()+"\t담당과목 : "+this.subject); 
+	}
+	
 }
 
 class Employee extends Human
 {
 	///Field
-	String dept;
+	private String dept;
 
 	///Constructor
 	public Employee(){
@@ -103,9 +123,14 @@ class Employee extends Human
 	}
 
 	///Method
+	public String getDept(){
+		return this.dept;
+	}	
+
 	public void print(){
-		System.out.println("이름 : "+this.name+"\t나이 : "+this.age+"\t부    서 : "+this.dept);
+		System.out.println("이름 : "+getName()+"\t나이 : "+getAge()+"\t부    서 : "+this.dept);
 	}
+	
 }
 
 
