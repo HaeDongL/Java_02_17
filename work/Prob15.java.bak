@@ -14,7 +14,9 @@ class Prob15
 		for(int i=0; i<sourceString.length(); i++){
 			int number;
 			char currentChar = sourceString.charAt(i);
-			if(currentChar != ' '){
+			if(currentChar == ' '){
+				encodedString += ' ';
+			}else{
 				number = (int)currentChar;
 				if(currentChar == 'x' || currentChar == 'y' || currentChar == 'z'){
 					encodedString += (char)(number-23);
@@ -22,7 +24,6 @@ class Prob15
 					encodedString += (char)(number+3);
 				}
 			}
-			encodedString += currentChar;
 		}
 		System.out.println("암호화할 문자열: "+sourceString);
 		System.out.println("암호화된 문자열: "+encodedString);
