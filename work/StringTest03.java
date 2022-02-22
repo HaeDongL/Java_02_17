@@ -18,7 +18,7 @@ public class StringTest03
 		String s1 = hi.concat(name);
 		System.out.println(s1);
 
-		String s2 = s1.substring(7);
+		String s2 = s1.substring(7);//7번째 문자열 이후 문자 출력
 		System.out.println(s2);
 
 		int a = name.indexOf("ABC");

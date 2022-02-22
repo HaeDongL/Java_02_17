@@ -31,12 +31,27 @@ class VectorTest01
 			//String s = (String)vector.elementAt(i); //위의 두 line과 비교
 			System.out.print(s);
 			//System.out.print((String)vector.elementAt(i);
+			}//for
+			
 
 			System.out.println("\n==>API 확인");
 			vector.insertElementAt("4.길:",1);
-			for(int j=0; i<vector.size();j++){
+			for(int i=0; i<vector.size();i++){
+				System.out.print((String)vector.elementAt(i));
+			}//for
+	
+		
+			System.out.println("\n==>API 확인");
+			vector.setElementAt("5.홍길순",3);
+			for(int i=0; i<vector.size();i++){
 				System.out.print((String)vector.elementAt(i));
 			}
-		}
+		
+			System.out.println("\n==>API 확인");
+			vector.removeElementAt(3);
+			for(int i=0; i<vector.size();i++){
+				System.out.print((String)vector.elementAt(i));
+			}
+
 	}
 }

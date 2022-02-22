@@ -17,7 +17,7 @@ public class CallByReferenceTest
 	public void referenceChange(CallByReferenceTest value){
 		System.out.println("========================");
 		value.number = value.number + 100;
-		System.out.println("value: "+value);
+		System.out.println("value.number: "+value.number);
 		System.out.println("========================");
 	}
 	public static void main(String[] args) 

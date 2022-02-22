@@ -30,7 +30,7 @@ public class StringTest03
 		System.out.println(name.substring(b));
 		System.out.println(name.substring(b,5));
 
-		int c = name.indexOf("n");
+		int c = name.indexOf("z");
 		System.out.println(c);
 	}//end of main
 }// end of class

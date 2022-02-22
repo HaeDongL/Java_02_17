@@ -1,5 +1,5 @@
 class Prob15
-{//02.21
+{//02.22
 	public static void main(String[] args) 
 	{
 		String sourceString = "everyday we have is one more than we deserve";
@@ -12,10 +12,17 @@ class Prob15
 		//char c1 = (char)i;
 		
 		for(int i=0; i<sourceString.length(); i++){
-			char j = sourceString.charAt(i);
-			int k = (int)j;
-			char c = (char)(k+3);
-			encodedString += c;
+			int number;
+			char currentChar = sourceString.charAt(i);
+			if(currentChar != ' '){
+				number = (int)currentChar;
+				if(currentChar == 'x' || currentChar == 'y' || currentChar == 'z'){
+					encodedString += (char)(number-23);
+				}else {
+					encodedString += (char)(number+3);
+				}
+			}
+			encodedString += currentChar;
 		}
 		System.out.println("암호화할 문자열: "+sourceString);
 		System.out.println("암호화된 문자열: "+encodedString);

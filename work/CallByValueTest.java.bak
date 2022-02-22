@@ -19,16 +19,16 @@ public class CallByValueTest
 	public void valueChange(int value){
 		System.out.println("========================");
 		value = value + 100;
-		System.out.println("value: "+value);
+		System.out.println("value.number: "+value);
 		System.out.println("========================");
 	}
 	///Main Method
 	public static void main(String[] args) 
 	{
-		CallByValueTest call = CallByValueTest();
+		CallByValueTest call = new CallByValueTest();
 
 		//method 의 인자 값으로 int(primitive DataType)
 		call.valueChange(call.number);
-		System.out.println("number: "+call.number);
+		System.out.println("call.number: "+call.number);
 	}//end of main
 }/// end of class

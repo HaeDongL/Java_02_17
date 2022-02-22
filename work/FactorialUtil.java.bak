@@ -1,25 +1,26 @@
 import java.util.Scanner;
 
 public class FactorialUtil 
-{
+{//02.21
 	
 
-	public int factorial(int n){
+	public String factorial(int n){
 		// 구현하세요
 		int result = 1;
+		String print;
 		for(int i=n; i>=1; i--){
 				result *= i;
 		}
-		
-			System.out.print("팩토리얼 결과 값 = "+result+"\t(");
+		System.out.println(result);
+			print = "팩토리얼 결과 값 = "+result+"\t(";
 		for(int i=n; i>1; i--){
-			System.out.print(i+"*");
+			print += i+"*";
 			if(i == 2){
-				System.out.print(i-1+")\t");
+				print += (i-1)+")\t";
 			}
 		}
 
-		return result;
+		return print;
 		
 	}
 
