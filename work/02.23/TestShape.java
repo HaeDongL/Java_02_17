@@ -35,7 +35,7 @@ class Circle extends Shape
 	}
 	///Method
 	public void calculationArea(){
-		area = radius * radius * 3.141592653589793;
+		area = radius * radius * 3.141592653589793; //Math.PI¾²¸éµÊ
 	}
 
 	///getterMethod
@@ -64,7 +64,7 @@ class Rectangular extends Shape
 	}
 	///Method
 	public void calculationArea(){
-		area = width * hight;
+		area = this.width * this.hight;
 	}
 	///getterMethod
 	public double getWidth(){

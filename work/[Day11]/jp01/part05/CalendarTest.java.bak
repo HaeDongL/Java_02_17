@@ -28,12 +28,12 @@ public class CalendarTest{
 		System.out.println("월 : "+cld.get(Calendar.MONTH));
 		System.out.println("일 : "+cld.get(Calendar.DATE));
 		System.out.println(cld.get(Calendar.YEAR)+"년의: "+
-														cld.get(Calendar.WEEK_OF_YEAR)+"번째주");
+				                                                           cld.get(Calendar.WEEK_OF_YEAR)+"번째주");
 		System.out.println(cld.get(Calendar.YEAR)+"년의: "+
-                                                        cld.get(Calendar.WEEK_OF_MONTH)+"번째달");
+                                                                           cld.get(Calendar.WEEK_OF_MONTH)+"번째달");
 		System.out.println("이번달의 : "+cld.get(Calendar.DAY_OF_MONTH)+"번째일");
 		System.out.println(cld.get(Calendar.YEAR)+"년의: "+
-                                                        cld.get(Calendar.DAY_OF_YEAR)+"번째일");
+                                                                          cld.get(Calendar.DAY_OF_YEAR)+"번째일");
 		System.out.println("이번주의 : "+cld.get(Calendar.DAY_OF_WEEK)+"번째일");
 		System.out.println("오전,오후 : "+cld.get(Calendar.AM_PM));
 		System.out.println("시간 : "+cld.get(Calendar.HOUR));

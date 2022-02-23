@@ -39,7 +39,7 @@ public class Adder
 				strNum += c;
 			}
 		}
-		return (result + Integer.parseInt(""+expr.charAt(expr.length()-1)));
+		return (result + Integer.parseInt(strNum));
 	}
 	
 

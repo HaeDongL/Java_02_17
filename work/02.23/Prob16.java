@@ -23,16 +23,16 @@ public class Prob16
 		
 		System.out.println("주어진 숫자까지의 구구단을 찍습니다.");
 		System.out.println("-------Sample 1---------");
-		printGugudan(4);
+		Prob16.printGugudan(4);
 
 		System.out.println("-------Sample 2---------");
-		printGugudan(9);
+		Prob16.printGugudan(9);
 
 		System.out.println("-------Sample 3---------");
-		printGugudan(-1);
+		Prob16.printGugudan(-1);
 
 		System.out.println("-------Sample 4---------");
-		printGugudan(10);
+		Prob16.printGugudan(10);
 			
 	}///main
 }///class
