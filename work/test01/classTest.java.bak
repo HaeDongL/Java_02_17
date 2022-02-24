@@ -1,32 +1,13 @@
-class class01
-{
-	
-	public void a(){
-		System.out.println("class01");
-	}
 
-} 
-
-class class02 extends class01
-{
-	public void a(){
-		System.out.println("class02");
-	}
-
-	
-
-}
-
-
-
-public class classTest
+public class ClassTest
 
 {
 	public static void main(String[] args) 
 	{
-		class01 c1 = new class02();
-
-		new class02().super.a();
+		
+		ClassTest ct = new ClassTest();
+		ct.getClass().getName();
+		
 		
 	}
 }
