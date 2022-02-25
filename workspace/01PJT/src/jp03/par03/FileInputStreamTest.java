@@ -13,6 +13,8 @@ public class FileInputStreamTest {
 		///File을 읽어 들이는 Strema 선언
 		FileInputStream fis = null;
 		//read() 수 count 위한 변수
+		Writer writer = new OutputStreamWriter(System.out);
+		
 		int readCount=0;
 		
 		try {
@@ -25,13 +27,17 @@ public class FileInputStreamTest {
 					break;
 				}
 				
-				char c = (char)i;
-				System.out.print(c);
+				//char c = (char)i;
+				//System.out.print(c);
+				writer.wait(i);
 				
 				readCount++;
 			
 			}
 			
+			
+		}catch(InterruptedException e) {
+			e.printStackTrace();
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
 		}catch(IOException e1) {
@@ -41,7 +47,9 @@ public class FileInputStreamTest {
 			System.out.println("=======>> read횟수 readCount: "+readCount);
 			System.out.println("\n\n=========================================");
 			try {
+				if(fis!=null) {
 				fis.close();
+				}
 			}catch(Exception e) {
 				e.printStackTrace();
 			}

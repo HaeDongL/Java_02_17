@@ -12,6 +12,8 @@ import java.io.*;
 public class InputTest {
 	//Main Method
 	public static void main(String[] args) {
+		
+		System.out.println(args[0]);
 		//InpuStream :: 표준입력장치 추상화한 class
 		InputStream inputStream = System.in;
 		
