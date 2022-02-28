@@ -67,7 +67,7 @@ class CellPhone{
 
 class SmartPhone extends CellPhone{
 	///Field
-	private boolean isMonthlyFixedRate; 
+	private boolean MonthlyFixedRate; 
 	private int monthlyFixedFee; 
 	///Constructor
 	public SmartPhone(){
@@ -77,19 +77,18 @@ class SmartPhone extends CellPhone{
 		super(phoneNumber, feePerCallTime);
 		
 	}
-	public SmartPhone(String phoneNumber,int feePerCallTime,boolean isMonthlyFixedRate,int monthlyFixedFee) {
+	public SmartPhone(String phoneNumber,int feePerCallTime,boolean MonthlyFixedRate,int monthlyFixedFee) {
 		super(phoneNumber, feePerCallTime);
-		this.isMonthlyFixedRate = isMonthlyFixedRate;
+		this.MonthlyFixedRate = MonthlyFixedRate;
 		this.monthlyFixedFee = monthlyFixedFee;
 	}
 	///Method
 	
 	public void calculationTotalFee() {
-		if(isMonthlyFixedRate) {
+		if(MonthlyFixedRate) {
 			setTotalFee(monthlyFixedFee);
 		}else {
-			int total = getFeePerCallTime() * getTotalCallTime();
-			setTotalFee(total);
+			super.calculationTotalFee();
 		}
 		
 	}

@@ -41,8 +41,12 @@ public class Prob20 {
 		String str = "PROD-001#X-note#Smasung#3#6000000";
 		String[] strs = stringSpilt(str,"#");
 		System.out.println("===문자열 처리 결과===");
-		for(int i=0; i< strs.length; i++) {
-			System.out.println(strs[i]);
+//		for(int i=0; i< strs.length; i++) {
+//			System.out.println(strs[i]);
+//		}
+		
+		for(String arr : strs) {
+			System.out.println(arr);
 		}
 
 	}

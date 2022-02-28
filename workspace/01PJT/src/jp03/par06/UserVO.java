@@ -12,7 +12,7 @@ import java.io.*;
  */
 
 
-public class UserVO {
+public class UserVO implements Serializable {
 
 			///Field
 			private int no;
