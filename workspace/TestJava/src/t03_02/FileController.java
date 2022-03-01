@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.EmptyStackException;
+import java.util.Stack;
 
 public class FileController {
 
@@ -11,11 +13,29 @@ public class FileController {
 		int count = 0;
 		BufferedReader br = new BufferedReader(new FileReader(oldf));
 		BufferedWriter bw = new BufferedWriter(new FileWriter(newf));
-		String txt = null;
+		
+		Stack<String> st = new Stack<String>();
+		
+		
+		String txt = "";
+		
+			while(true) {
+			txt = br.readLine();
+			//System.out.println(txt);
+			if(txt == null) {
+				break;
+			}
+			st.push(txt);
+			//System.out.println(st.peek());
+			
+			
+		}
+		
+		
 		while(true) {
 			
-			
-			txt = br.readLine();
+			//System.out.println(st.peek());
+			txt = st.pop();
 			bw.write(txt);
 			bw.newLine();
 			bw.flush();
@@ -38,7 +58,12 @@ public class FileController {
 		FileController c = new FileController();
 		String oldf = "files/oldf.txt";
 		String newf = "files/newf.txt";
+		try {
 		c.reverseLine(oldf,newf);
+		}catch(EmptyStackException e1) {
+			e1.printStackTrace();
+		}
+		System.out.println("정상 종료");
 	}
 
 }

@@ -13,7 +13,7 @@ public class Prob22 {
 			if(!(arrayByte >= 'A' && arrayByte <= 'z')) {
 				if(arrayByte == ' ') {
 					hexStr += ' ';
-				}else if(arrayByte >= 48 && arrayByte <= 58){
+				}else if(arrayByte >= '0' && arrayByte <= '9'){
 					hexStr += (char)arrayByte.intValue();
 				}else {
 					hexStr += "%"+Integer.toHexString(arrayByte).substring(6).toUpperCase();
@@ -40,6 +40,7 @@ public class Prob22 {
 		System.out.println("출력: "+p1.toEncoding("Hong 길 동"));
 		System.out.println("입력: "+"0319");
 		System.out.println("출력: "+p1.toEncoding("0319"));
+
 
 	}
 
