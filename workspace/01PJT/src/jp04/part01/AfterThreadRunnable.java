@@ -4,9 +4,10 @@ package jp04.part01;
  */
 
 
-public class AfterThreadRunnable {
+public class AfterThreadRunnable implements Runnable{
 	///Field
 	private String name;
+	
 	///Constructor
 	public AfterThreadRunnable() {
 		
@@ -19,15 +20,15 @@ public class AfterThreadRunnable {
 	public void run(){
 		for(int i=1; i<100; i++) {
 			System.out.println(name+" : "+i);
-			/*
+			//*
 			 	//sleep() ==> API확인
 			
-			 *try{
-			 *Thread.sleep(100);
-			 *}catch(InterruptedException e){
-			 *	System.out.println(e);
-			 *}
-			 */
+			 try{
+			 Thread.sleep(100);
+			 }catch(InterruptedException e){
+			 	System.out.println(e);
+			 }
+			 //
 			
 		}
 	}
@@ -48,8 +49,9 @@ public class AfterThreadRunnable {
 		
 		
 		//Thread 생성자 확인
-		Thread t1 = new Thread("bt1");
-		Thread t2 = new Thread("bt2");
+		Thread t1 = new Thread(bt1);
+		Thread t2 = new Thread(bt2);
+		
 		
 		t1.start();
 		t2.start();

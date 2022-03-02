@@ -1,7 +1,6 @@
 package t03_02;
 
 public class Prob23 {
-
 	
 	public static String getParameter(String url, String paramName) {
 		String getParam = "";
