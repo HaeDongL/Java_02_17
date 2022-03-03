@@ -5,11 +5,14 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 //import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.List;
 
 public class FileCompareUtil {
 	
 	
-	public ArrayList compareFile(String fstFileName, String scdFileName) throws Exception{
+	//public ArrayList compareFile(String fstFileName, String scdFileName) throws Exception{
+	public List compareFile(String fstFileName, String scdFileName) throws Exception{
+
 		//implements compareFile method.
 		BufferedReader br1 = new BufferedReader(new FileReader(fstFileName));
 		BufferedReader br2 = new BufferedReader(new FileReader(scdFileName));

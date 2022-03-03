@@ -12,8 +12,8 @@ SELECT USER FROM DUAL;
 //=============================================//
 //==>TABLE 모든 COLUMN VALUE 입력
 INSERT
-INTO emp_test (id,name,salary,table,in,data,dept_name)
-VALUES(1,'김사장',100,'사장','04-07-19','개발부);
+INTO emp_test (id,name,salary,title,in_date,dept_name)
+VALUES(1,'김사장',100,'사장','04-07-19','개발부');
 
 SELECT*FROM EMP_TEST;
 
@@ -21,7 +21,7 @@ SELECT*FROM EMP_TEST;
 //==> TABLE 모든 COLUMN에 VALUE입력 경우
 INSERT
 INTO emp_test
-VALUES(2,'홍길동',1000,'부사장','2004/07/19','영업부);
+VALUES(2,'홍길동',1000,'부사장','2004/07/19','영업부');
 
 
 //=============================================//
@@ -62,7 +62,7 @@ SELECT*FROM emp_test;
 ==>KEYWORD :: USER/SYSDATE 이용한 VALUE 입력
 INSERT
 INTO emp_test
-VALUES (2,USER,1000,'부사장',SYSDATE,'영업부');
+VALUES(2,USER,1000,'부사장',SYSDATE,'영업부');
 
 
 //=============================================//
@@ -71,12 +71,13 @@ INSERT
 INTO emp_test(id,name)
 VALUES(5,'장나라');
 
+SELECT*FROM emp_test;
 
 //=============================================//
 //==> NULL입력 :: 명시적 입력 //==> NULL또는 ''사용
 INSERT
 INTO emp_test
-VALUE(6,'신나라',NULL,null,",");
+VALUES(6,'신나라',NULL,null,'','');
 COMMIT;
 
 

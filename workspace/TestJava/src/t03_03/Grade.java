@@ -29,8 +29,12 @@ public class Grade {
 	public static void main(String[] args) throws Exception {
 		Grade grade = new Grade();
 		String fileName = "score.txt";
+		try {
 		grade.printGrade(fileName);
-
+		}catch(NullPointerException en) {
+			en.printStackTrace();
+		}
+		
 	}
 
 }

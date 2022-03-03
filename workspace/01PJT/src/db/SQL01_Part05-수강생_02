@@ -26,7 +26,7 @@ SELECT * FROM emp_test;
 //==> id 5이상 6이하 RECORD 삭제 ==> 변경 후 ROLLBAKC
 
 DELETE FROM emp_test
-WHERE id >= 6 AND id <=6;
+WHERE id >= 5 AND id <=6;
 
 SELECT * FROM emp_test;
 
