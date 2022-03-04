@@ -74,9 +74,12 @@ class Score {
 public class Prob2 {
 	
 	//public Vector getScore(String fileName) throws Exception {
-	public List getScore(String fileName) throws Exception {
+	public List getScore(String fileName)  {
 		Vector vc = new Vector();
-		BufferedReader br = new BufferedReader(new FileReader(fileName));
+		BufferedReader br = null;
+		
+		try {
+			br = new BufferedReader(new FileReader(fileName));
 		String read = "";
 		String[] strTemp;
 		int sum = 0;
@@ -94,7 +97,17 @@ public class Prob2 {
 			vc.add(sc);
 			sum = 0;
 		}
-		br.close();
+		}catch(Exception e) {
+			
+			
+		}finally {
+			
+			if(br != null) {
+				try { br.close(); } catch(Exception e1){}
+				}
+			}
+		
+	
 		return vc;
 	}
 	

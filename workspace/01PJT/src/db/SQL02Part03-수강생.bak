@@ -15,15 +15,16 @@ SELECT ROWNUM, id, name FROM emp_test;
 //==> 출력 내용의 이해
 SELECT
 COUNT(*) "레코드",
-COUNT(salary) 월급수령자,
-COUNT(NVL(salary,0) "월급수령자 (NULL포함)",
+COUNT(salary) "월급수령자",
+COUNT(NVL(salary,0)) "월급수령자 (NULL포함)",
 COUNT(DISTINCT salary) "월급종류",
-COUNT(DISTINCT NVL(salary,0) "월급종류(NULL포함)"
+COUNT(DISTINCT NVL(salary,0)) "월급종류(NULL포함)"
 FROM emp_test;
 
 //==> 영업부 인원수 count 조회
+SELECT
 COUNT(*) "영업부직원1",
-COUNT(dept_name) "영업부직원2,
+COUNT(dept_name) "영업부직원2",
 COUNT(salary) 영업부직원월급수령자
 FROM emp_test
 WHERE dept_name = '영업부';

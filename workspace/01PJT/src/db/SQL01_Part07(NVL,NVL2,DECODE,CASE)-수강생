@@ -21,7 +21,7 @@ FROM emp_test;
 
 //=============================================//
 //==> NVL(expr1, expr2):: expr1이 null인 경우 expr2로 출력
-//==> NVL(컬럼명, [null 값이 아닐경우],[null 값일 경우])
+//==> NVL2(컬럼명, [null 값이 아닐경우],[null 값일 경우])
 SELECT
 name, NVL(salary, salary,0), NVL(salary, 0)
 FROM emp_test;
@@ -42,9 +42,8 @@ FROM emp_test;
 
 SELECT
 name, DECODE(title,
-				NULL,'<직읍없음>',/* if(title = null) <직급없음>		*/
-				'직급있음')		/* else				아니면 직급있음 */
-				
+			NULL,'<직읍없음>',/* if(title = null) <직급없음>		*/
+				'직급있음')/* else				아니면 직급있음 */		
 FROM emp_test;
 
 SELECT
