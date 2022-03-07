@@ -8,17 +8,21 @@ public class Prob02 {
 
 	private static int[] generateRandomNumber() {
 		
-		int[] randomIntArray = new int[10];
+		int[] randomIntArray = new int[10]; //초기값 0
+		boolean[] difference = new boolean[10]; // 전부 false;
 		int random = 0;
 		Random rd = new Random();
 		
-		for(int i=0; i<randomIntArray.length;i++) {
-			for(int j=0; j<randomIntArray.length; j++) {
+		randomIntArray[0] = rd.nextInt(20)+1;
+		for(int i=1; i<randomIntArray.length;i++) {
+			while(randomIntArray[i] == 0) {
 				random = rd.nextInt(21);
-				if(random == randomIntArray[j] ) {
-					continue;
-				}else {
-					randomIntArray[i] = random;
+				for(int j=0; j<i; j++) {
+					if(random == randomIntArray[j]) {
+						break;
+					}else if(j == i-1) {
+						randomIntArray[i] = random;
+					}
 				}
 			}
 					
@@ -41,13 +45,17 @@ public class Prob02 {
 				sum += list;
 				br.write(Integer.toString(list));
 				br.newLine();
-				if(maxNum < list) {
-					maxNum = list;
-				}
-				if(minNum > list) {
-					minNum = list;
-				}
+//				if(maxNum < list) {
+//					maxNum = list;
+//				}
+//				if(minNum > list) {
+//					minNum = list;
+//				}
+				maxNum = Math.max(maxNum,list);
+				minNum = Math.min(minNum,list);
+				
 			}
+			
 			avg = (double)sum / array.length;
 			br.write("최대값 : "+maxNum+"\n");
 			br.write("최소값 : "+minNum+"\n");

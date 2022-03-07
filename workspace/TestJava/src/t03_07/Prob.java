@@ -1,13 +1,16 @@
 package t03_07;
 
-import java.util.List;
+
+
 import java.util.Vector;
+
+
 
 
 public class Prob {
 	
 	
-	private static Book makeBook(String bookData) throws DataFormatException {
+	private static Book makeBook(String bookData) {
 		Book bInstance = new Book();
 		String[] strSplit = bookData.split(":");
 		if(!(strSplit.length < 3)) {
@@ -26,6 +29,9 @@ public class Prob {
 		for(int i=0; i<bookList.size(); i++) {
 			System.out.println(bookList.get(i));
 		}
+//		for(Object obj : bookList) {
+//			System.out.println(bookList);
+//		}
 	}
 	
 	
@@ -42,7 +48,7 @@ public class Prob {
 			//case1
 			bookList.add(Prob.makeBook("JDBC Programming 기초:컴퓨터:35000"));
 			//case2
-			//BooList.add(makeBook("JDBC Programming 기초:컴퓨터"));
+			//bookList.add(makeBook("JDBC Programming 기초:컴퓨터"));
 			bookList.add(Prob.makeBook("Java Programming 기초:컴퓨터:35000"));
 			Prob.printBookList(bookList);
 			

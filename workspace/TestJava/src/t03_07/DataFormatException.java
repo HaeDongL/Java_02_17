@@ -1,6 +1,6 @@
 package t03_07;
 
-public class DataFormatException extends Exception{
+public class DataFormatException extends RuntimeException{
 	public DataFormatException() {
 		
 	}
