@@ -25,7 +25,7 @@ WHERE c.dept_id = s.id
 AND c.salary < (SELECT
 		AVG(salary)
 		FROM c_emp)
-AND sg.grade BETWEEN sg.losal AND sg.hisal;
+AND c.salary BETWEEN sg.losal AND sg.hisal;
 
 
 3. 홍길동과 월급등급이 같은 직원   이름, 부서명 , 월급 ,월급등급  조회

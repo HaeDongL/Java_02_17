@@ -1,0 +1,5 @@
+SELECT
+e.employee_id 사번,CONCAT(e.first_name, e.last_name) 이름, j.job_id, job_title, jh.employee_id, jh.job_id
+FROM employees e, jobs j, job_history jh
+WHERE e.job_id = j.job_id
+AND jh.job_id = j.job_id;
