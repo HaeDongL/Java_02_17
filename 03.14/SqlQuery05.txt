@@ -1,0 +1,19 @@
+1
+SELECT department_name NAME, MIN(salary) MINSAL, MAX(salary) MAXSAL, AVG(salary) AVGSAL
+FROM employees a, departments b
+WHERE a.department_id=b.department_id
+GROUP BY department_name
+ORDER BY department_name;
+
+=====================================================================
+2
+SELECT
+e.employee_id,d.department_id,e.salary,TRUNC(ve.va,0) AVG_salary
+FROM employees e, departments d,(SELECT
+				d1.department_id vdi,AVG(e1.salary) va
+				FROM employees e1, departments d1
+				WHERE e1.department_id = d1.department_id
+				GROUP BY d1.department_id) ve
+WHERE e.department_id = d.department_id
+AND d.department_id = ve.vdi
+AND e.salary > ve.va;
