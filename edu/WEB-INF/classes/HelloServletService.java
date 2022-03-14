@@ -24,8 +24,8 @@ public class HelloServletService extends HttpServlet {
 			System.out.println("Request Client IP : "+req.getRemoteAddr());
 			
 			//한글처리
-			res.setContentType("text/html");
-			//res.setContentType("text/html;charset=EUC-KR");
+			//res.setContentType("text/html");
+			res.setContentType("text/html;charset=EUC-KR");
 			
 			//1. client Html Text 전송위한 Stream을 생성
 			/*OutputStream outputStream = res.getOutputStream();
@@ -50,4 +50,5 @@ public class HelloServletService extends HttpServlet {
 			System.out.println("::servlet service() 종료\n");
 
 		}//end of service
+
 }

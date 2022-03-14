@@ -17,9 +17,9 @@ public class GetDataKr extends HttpServlet{
 		 * 		useBodyEncodingForURI="true"/> <== 추가
 		 * ==========================================================
 		 */
-		res.setCharacterEncoding("EUC_KR");
+		req.setCharacterEncoding("EUC_KR");
 		//아래의 두실행문은 servlet에서 client로 html을 전송시 필수 코딩
-		res.setContentType("text/html;charset=EUC-KR");
+		res.setContentType("text/html;charset=EUC_KR");
 		PrintWriter out = res.getWriter();
 		
 		//client form data(QueryString::name=value)처리(API확인)

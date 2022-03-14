@@ -17,6 +17,10 @@ public class HelloServletdoPost extends HttpServlet{
 	//service() method Overriding 않음
 	
 	//doPost() method Overrding
+	public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException{
+		this.doPost(req,res);
+	}
+
 	public void doPost(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException{
 			
 			System.out.println("::servlet doPost() 시작");

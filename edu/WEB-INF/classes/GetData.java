@@ -11,7 +11,7 @@ public class GetData extends HttpServlet{
 		public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException{
 				
 			//아래의 두실행문은 servlet에서 client로 html을 전송시 필수 코딩
-			res.setContentType("text/html;charset=EUC-KR");
+			res.setContentType("text/html;charset=EUC_KR");
 			PrintWriter out = res.getWriter();
 			
 			//client form data(QueryString::name=value)처리(API확인)

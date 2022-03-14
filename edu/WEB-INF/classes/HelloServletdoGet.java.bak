@@ -9,7 +9,7 @@ public class HelloServletdoGet extends HttpServlet{
 	
 	//service() method Overriding 않음
 	
-	public void service(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException{
+	public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException{
 		
 		System.out.println("::servlet doGet() 시작");
 		System.out.println("Request Client IP : "+req.getRemoteAddr());
