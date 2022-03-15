@@ -1,5 +1,5 @@
 SELECT
-d.department_name 부서명, e.first_name 이름, e.salary 금여, ve.vcom 커미션
+d.department_name 부서명, e.first_name 이름, e.salary 급여, ve.vcom 커미션
 FROM employees e, departments d,(SELECT
 								 e.commission_pct vcom, d.department_id vedid
 								 FROM employees e, departments d
